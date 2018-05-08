@@ -1,4 +1,5 @@
-./
+local build
+
 sudo apt-get update
 sudo apt-get install git
 sudo apt-get install libboost1.55
@@ -7,11 +8,9 @@ git clone git://github.com/hex-color/Kopeyka.git
 cd Kopeyka
 make -j4
 =============================================================================
-
 ./Kopeykad --print-genesis-tx
-
 =============================================================================
-srv1
+core -> srv1 -> srv2
 
 sudo su -> https://coderwall.com/p/0atfug/installing-boost-1-55-from-source-on-ubuntu-12-04
 cd /home/ubuntu
@@ -20,11 +19,6 @@ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
-
-
-
-
-
 
 
 013c01ff0001ffffffffffff0f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121019e7131f12748d69f802c9126df3410f1ae3387e83a219507a97cff55a3376122
