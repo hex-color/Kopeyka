@@ -14,7 +14,7 @@ make
 srv1
 
 sudo su -> https://coderwall.com/p/0atfug/installing-boost-1-55-from-source-on-ubuntu-12-04
-cd home/ubuntu
+cd /home/ubuntu
 sudo apt-get install libstdc++6
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test 
 sudo apt-get update
