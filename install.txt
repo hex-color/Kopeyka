@@ -31,3 +31,5 @@ password: *********
 Generated new wallet: fkczpM3xpnWgRAVV7JwdcuhVsmzF2Diet1h65uZeCJQFKYYXb437yFMLbkyeay1pN9UAFgyHtXgWXZrm4TBVTZwSadFqL6XcvT1
 view key: fb173ce4cc5e2fe47aadf784359f80781bbd54571f1270f82c06ae55b9d1600d
 **********************************************************************
+
+start_mining fkczpM3xpnWgRAVV7JwdcuhVsmzF2Diet1h65uZeCJQFKYYXb437yFMLbkyeay1pN9UAFgyHtXgWXZrm4TBVTZwSadFqL6XcvT1 1
