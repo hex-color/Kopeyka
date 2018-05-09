@@ -27,7 +27,7 @@ take hash
 ### retry BUILD
 ## Start
 cd build/release/src
-./bitmonerod
+./Kopeykad
 
 
 # Second Server
