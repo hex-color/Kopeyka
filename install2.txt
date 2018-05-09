@@ -4,7 +4,6 @@ sudo su
 sudo apt-get update
 sudo apt-get install mc
 ## GGC install
-sudo su
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
 sudo apt-get install gcc-4.7
@@ -18,7 +17,6 @@ sudo apt-get upgrade
 sudo apt-get install libboost-all-dev
 ## git install
 sudo apt-get install git
-exit
 ## BUILD
 git clone git://github.com/hex-color/Kopeyka.git
 cd Kopeyka
@@ -27,3 +25,27 @@ cd /build/release/src/
 ./Kopeykad --print-genesis-tx
 take hash
 ### retry BUILD
+## Start
+cd build/release/src
+./bitmonerod
+
+
+# Second Server
+sudo su
+sudo apt-get update
+sudo apt-get install mc
+## GGC install
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update
+sudo apt-get install gcc-4.7
+## CMAKE install
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:george-edison55/cmake-3.x
+sudo apt-get update
+sudo apt-get install cmake
+sudo apt-get upgrade
+## libboost install
+sudo apt-get install libboost-all-dev
+
+wget https://sourceforge.net/projects/kopeykac/files/Kopeyka.tar.gz
+tar zxf Kopeyka.tar.gz
