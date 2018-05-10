@@ -3,41 +3,48 @@ Test in ubuntu-xenial-16.04-amd64-server-20180306
 sudo su
 sudo apt-get update
 sudo apt-get install mc
+
 ## GGC install
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
 sudo apt-get install gcc-4.7
+
 ## CMAKE install
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:george-edison55/cmake-3.x
 sudo apt-get update
 sudo apt-get install cmake
 sudo apt-get upgrade
+
 ## libboost install
 sudo apt-get install libboost-all-dev
+
 ## git install
 sudo apt-get install git
+
 ## BUILD
 git clone git://github.com/hex-color/Kopeyka.git
 cd Kopeyka
 make -j4
-cd /build/release/src/
+
+## take hash
+cd build/release/src/
 ./Kopeykad --print-genesis-tx
-take hash
 ### retry BUILD
 ## Start
 cd build/release/src
 ./Kopeykad
 
-
 # Second Server
 sudo su
 sudo apt-get update
 sudo apt-get install mc
+
 ## GGC install
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
 sudo apt-get install gcc-4.7
+
 ## CMAKE install
 sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:george-edison55/cmake-3.x
@@ -49,3 +56,7 @@ sudo apt-get install libboost-all-dev
 
 wget https://sourceforge.net/projects/kopeykac/files/Kopeyka.tar.gz
 tar zxf Kopeyka.tar.gz
+
+./simplewallet --generate-new-wallet=wallet.bin
+./simplewallet --wallet-file=wallet.bin
+start_mining 1
